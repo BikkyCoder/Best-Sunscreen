@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best sunscreen with Deconstruct Lightweight Gel Sunscreen – SPF 55+, PA+++, broad-spectrum protection for all skin types. Buy now!">
+    <meta name="keywords" content="best sunscreen, Deconstruct sunscreen, SPF 55+, PA+++, lightweight gel sunscreen, broad spectrum protection">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Best Sunscreen: Deconstruct Lightweight Gel Sunscreen for All Skin Types">
+    <meta property="og:description" content="Discover the best sunscreen with Deconstruct Lightweight Gel Sunscreen – SPF 55+, PA+++, broad-spectrum protection for all skin types. Buy now!">
+    <meta property="og:image" content="https://via.placeholder.com/250/000/fff?text=Image1">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="YOUR_WEBSITE_URL">
+    <title>Best Sunscreen: Deconstruct Lightweight Gel Sunscreen for All Skin Types</title>
+    <!-- Preload fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1C2526 0%, #000000 100%);
+            color: #FFFFFF;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #1C2526;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #D3D3D3;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .logo:hover {
+            color: #FFFFFF;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li {
+            position: relative;
+        }
+        .navbar a {
+            color: #D3D3D3;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .navbar a:hover {
+            background: #D3D3D3;
+            color: #1C2526;
+        }
+        .navbar a:hover + .tooltip {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #3A3F41;
+            color: #FFFFFF;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            z-index: 1000;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #3A3F41 transparent;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #2A2F31;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        /* Carousel Styling */
+        .carousel {
+            position: relative;
+            max-width: 250px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #FFFFFF;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .carousel-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .prev-btn {
+            left: 10px;
+        }
+        .next-btn {
+            right: 10px;
+        }
+        .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #D3D3D3;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .dot.active {
+            background: #FFFFFF;
+        }
+        .ranking, .why-best, .faq, .how-to-apply, .ingredients, .reviews {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #D3D3D3;
+            border-radius: 10px;
+            color: #1C2526;
+            font-weight: 600;
+        }
+        .ranking h2, .why-best h2, .faq h2, .how-to-apply h2, .ingredients h2, .reviews h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .ranking p, .why-best p, .faq details, .how-to-apply p, .ingredients p, .reviews p {
+            font-size: 1.1rem;
+        }
+        .features, .benefits {
+            margin: 30px 0;
+            padding: 20px;
+            background: #3A3F41;
+            border-radius: 10px;
+            border-left: 5px solid #D3D3D3;
+        }
+        .features h2, .benefits h2 {
+            font-size: 1.8rem;
+            color: #D3D3D3;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .features h2::after, .benefits h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #D3D3D3;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .features ul, .benefits ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .features ul li, .benefits ul li {
+            padding: 10px 0;
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 30px;
+            transition: color 0.3s ease;
+        }
+        .features ul li::before, .benefits ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #D3D3D3;
+            font-size: 1.2rem;
+        }
+        .features ul li:hover, .benefits ul li:hover {
+            color: #FFFFFF;
+        }
+        .quantity {
+            text-align: center;
+            font-size: 1rem;
+            color: #D3D3D3;
+            margin: 20px 0;
+            font-style: italic;
+            background: #1C2526;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .buy-button {
+            display: block;
+            width: 220px;
+            margin: 30px auto;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(90deg, #D3D3D3, #FFFFFF);
+            color: #1C2526;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+        .buy-button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        .video-placeholder {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-placeholder p {
+            font-style: italic;
+            color: #D3D3D3;
+        }
+        .rating {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .star {
+            font-size: 1.5rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .star.filled {
+            color: #FFD700;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .carousel {
+                max-width: 200px;
+            }
+            .buy-button {
+                width: 180px;
+                font-size: 1rem;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .logo {
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
+            .navbar ul {
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 10px;
+            }
+            .navbar a {
+                font-size: 0.9rem;
+                padding: 8px 10px;
+            }
+            .tooltip {
+                font-size: 0.8rem;
+                padding: 6px 8px;
+            }
+        }
+    </style>
+    <!-- Note: Create a sitemap.xml and robots.txt file to improve crawling. Example sitemap.xml entry:
+    <url>
+        <loc>YOUR_WEBSITE_URL</loc>
+        <lastmod>2025-06-08</lastmod>
+        <priority>1.0</priority>
+    </url>
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Deconstruct Lightweight Gel Sunscreen",
+      "description": "The best sunscreen with SPF 55+, PA+++, and broad-spectrum protection. Lightweight gel formula suitable for all skin types.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Deconstruct"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "YOUR_AMAZON_AFFILIATE_LINK",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      },
+      "image": [
+        "https://via.placeholder.com/250/000/fff?text=Image1",
+        "https://via.placeholder.com/250/000/fff?text=Image2",
+        "https://via.placeholder.com/250/000/fff?text=Image3"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Deconstruct the best sunscreen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deconstruct is considered the best sunscreen due to its SPF 55+, PA+++, and lightweight gel formula that suits all skin types, offering superior protection without greasiness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I apply this sunscreen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reapply every 2 hours, or sooner if swimming or sweating, to ensure continuous protection."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "YOUR_WEBSITE_URL#home"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Best Sunscreen",
+          "item": "YOUR_WEBSITE_URL"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo">BM</a>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+                <span class="tooltip">Return to the top of the page with the product overview.</span>
+            </li>
+            <li>
+                <a href="#features">Features</a>
+                <span class="tooltip">Explore the key features of this top-rated sunscreen.</span>
+            </li>
+            <li>
+                <a href="#benefits">Benefits</a>
+                <span class="tooltip">Learn about the benefits of using Deconstruct sunscreen.</span>
+            </li>
+            <li>
+                <a href="#why-best">Why Best</a>
+                <span class="tooltip">Understand why Deconstruct is ranked the best sunscreen.</span>
+            </li>
+            <li>
+                <a href="#faq">FAQ</a>
+                <span class="tooltip">Find answers to common questions about this sunscreen.</span>
+            </li>
+            <li>
+                <a href="#buy-now">Buy Now</a>
+                <span class="tooltip">Get your Deconstruct sunscreen through Amazon.</span>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="home">
+            <h1>Best Sunscreen: Deconstruct Lightweight Gel Sunscreen for All Skin Types</h1>
+            <!-- Carousel for multiple images -->
+            <div class="carousel">
+                <div class="carousel-images" id="carouselImages">
+                    <!-- Note: Replace these placeholder images with actual product images in WebP format for better performance -->
+                    <img src="image/image1.jpg" alt="Deconstruct Lightweight Gel Sunscreen - Front View" loading="lazy">
+                    <img src="image/image2.jpg" alt="Deconstruct Lightweight Gel Sunscreen - Side View" loading="lazy">
+                    <img src="image/image3.jpg" alt="Deconstruct Lightweight Gel Sunscreen - Texture" loading="lazy">
+                    <img src="image/image4.jpg" alt="Deconstruct Lightweight Gel Sunscreen - Texture" loading="lazy">
+                    <img src="image/image5.jpg" alt="Deconstruct Lightweight Gel Sunscreen - Texture" loading="lazy">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-dots" id="carouselDots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="ranking">
+            <h2>Top-Rated Sunscreen</h2>
+            <p>Ranked #1 for its SPF 55+, PA+++ protection, and lightweight gel formula suitable for all skin types.</p>
+        </div>
+        <div id="why-best" class="why-best">
+            <h2>Why Deconstruct is the Best Sunscreen</h2>
+            <p>Deconstruct Lightweight Gel Sunscreen stands out as the best sunscreen due to its high SPF 55+ rating, which blocks 98% of UVB rays, and PA+++ for superior UVA protection. Unlike other top sunscreens like EltaMD UV Clear (SPF 46), Deconstruct offers higher SPF and a non-sticky gel texture, making it ideal for oily and combination skin. Its broad-spectrum formula ensures protection against both UVA and UVB rays, preventing tanning, aging, and sunburn. Dermatologists recommend it for daily use, and its 50g travel-friendly size lasts about a month. Compared to Sun Bum SPF 50, Deconstruct is less greasy and better suited for all skin types, making it a top choice in 2025. Check out the <a href="#features">key features</a> to learn more about what makes this the best sunscreen.</p>
+        </div>
+        <div id="features" class="features">
+            <h2>Key Features of the Best Sunscreen</h2>
+            <ul>
+                <li><strong>SPF 55+:</strong> Blocks approx 98% of UVB rays, making it one of the best sunscreens for sun protection.</li>
+                <li><strong>PA+++:</strong> High UVA protection to prevent tanning and aging, a key reason it’s the best sunscreen.</li>
+                <li><strong>Broad Spectrum Protection:</strong> Shields against both UVA and UVB rays for comprehensive coverage.</li>
+                <li><strong>Texture:</strong> Lightweight gel, non-sticky, ideal for oily/combination skin.</li>
+                <li><strong>For All Skin Types:</strong> Suitable for everyone, cementing its place as the best sunscreen.</li>
+            </ul>
+        </div>
+        <div id="benefits" class="benefits">
+            <h2>Claimed Benefits of the Best Sunscreen</h2>
+            <ul>
+                <li>Protects against 98% UVB rays, a hallmark of the best sunscreen.</li>
+                <li>Moisturizes without clogging pores, perfect for daily use.</li>
+                <li>Non-sticky, lightweight, and hydrating, enhancing its ranking as the best sunscreen.</li>
+            </ul>
+        </div>
+        <div class="quantity">
+            <p><strong>Net Quantity:</strong> 50g (Travel-friendly, lasts about a month with daily use)</p>
+        </div>
+        <div id="how-to-apply" class="how-to-apply">
+            <h2>How to Apply the Best Sunscreen</h2>
+            <p>To get the most out of Deconstruct Lightweight Gel Sunscreen, the best sunscreen for all skin types, follow these steps: Apply a generous amount (about 2 finger lengths) to your face and neck 15 minutes before sun exposure. Spread evenly, ensuring all areas are covered. Reapply every 2 hours, or more frequently if swimming or sweating, to maintain protection. This method ensures you’re fully shielded from harmful UV rays, making Deconstruct the best sunscreen for daily use. For more details, check the <a href="#faq">FAQ section</a>.</p>
+        </div>
+        <div class="ingredients">
+            <h2>Ingredients Spotlight: Why It’s the Best Sunscreen</h2>
+            <p>Deconstruct Lightweight Gel Sunscreen contains key ingredients that make it the best sunscreen. It includes zinc oxide and titanium dioxide for broad-spectrum protection, hyaluronic acid for hydration, and niacinamide to soothe the skin. These ingredients work together to provide non-greasy, long-lasting protection, making it ideal for all skin types. The absence of harsh chemicals like oxybenzone also makes it a safe choice, further solidifying its position as the best sunscreen in 2025.</p>
+        </div>
+        <div class="video-placeholder">
+            <h2>Watch: How to Use the Best Sunscreen</h2>
+            <p>[Placeholder for YouTube video: Embed a video showing how to apply Deconstruct Lightweight Gel Sunscreen for maximum effectiveness.]</p>
+        </div>
+        <div class="reviews">
+            <h2>User Reviews for the Best Sunscreen</h2>
+            <p><strong>Anjali, 28:</strong> "This is hands down the best sunscreen I’ve used! It’s lightweight, doesn’t leave a white cast, and keeps my oily skin shine-free all day."</p>
+            <p><strong>Rahul, 35:</strong> "I love how this best sunscreen protects my skin without feeling heavy. Perfect for my daily commute in the sun."</p>
+            <p><strong>Priya, 42:</strong> "Deconstruct is the best sunscreen for my sensitive skin. No irritation, and it keeps my skin hydrated."</p>
+        </div>
+        <div class="rating">
+            <h2>Rate This Best Sunscreen</h2>
+            <div id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+        <div id="faq" class="faq">
+            <h2>Frequently Asked Questions About the Best Sunscreen</h2>
+            <details>
+                <summary>Why is Deconstruct the best sunscreen?</summary>
+                <p>Deconstruct is considered the best sunscreen due to its SPF 55+, PA+++, and lightweight gel formula that suits all skin types, offering superior protection without greasiness.</p>
+            </details>
+            <details>
+                <summary>How often should I apply this sunscreen?</summary>
+                <p>Reapply every 2 hours, or sooner if swimming or sweating, to ensure continuous protection.</p>
+            </details>
+        </div>
+        <div id="buy-now">
+            <a href="YOUR_AMAZON_AFFILIATE_LINK" target="_blank" class="buy-button" id="buyButton">Buy Now on Amazon</a>
+        </div>
+    </div>
+
+    <script>
+        // Carousel functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-images img');
+        const dots = document.querySelectorAll('.dot');
+        const carouselImages = document.getElementById('carouselImages');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlideIndex = 0;
+            if (index < 0) currentSlideIndex = slides.length - 1;
+            carouselImages.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function moveSlide(direction) {
+            currentSlideIndex += direction;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index;
+            showSlide(currentSlideIndex);
+        }
+
+        // Smooth scroll for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 70; // Adjust for navbar height
+                const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: elementPosition - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Button animation
+        const buyButton = document.getElementById('buyButton');
+        buyButton.addEventListener('mouseover', () => {
+            buyButton.style.transform = 'translateY(-3px)';
+        });
+        buyButton.addEventListener('mouseout', () => {
+            buyButton.style.transform = 'translateY(0)';
+        });
+
+        // Star rating interaction
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                stars.forEach(s => {
+                    s.classList.remove('filled');
+                    if (s.getAttribute('data-value') <= value) {
+                        s.classList.add('filled');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
